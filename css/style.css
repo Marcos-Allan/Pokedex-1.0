@@ -1,0 +1,154 @@
+:root{
+    --green-V: rgba(211, 242, 99, 1);
+    --green-dark-V: rgba(167, 191, 78, 1);
+    --white-V: rgba(242, 242, 242, 1);
+    --gray-V: rgba(64, 64, 64, 1);
+    --black-V: rgba(13, 13, 13, 1);
+
+    --green-V-50: rgba(211, 242, 99, .5);
+    --green-dark-V-50: rgba(167, 191, 78, .5);
+    --white-V-50: rgba(242, 242, 242, .5);
+    --gray-V-50: rgba(64, 64, 64, .5);
+    --black-V-50: rgba(13, 13, 13, .5);
+}
+
+@font-face {
+    font-family: 'Pixel-font';
+    src: url('../fonts/pixel.ttf');
+}
+
+nav#menu{
+    background-color: var(--green-V);
+    border-bottom: 2px solid var(--gray-V);
+    color: var(--ay-V);
+    z-index: 4;
+}
+
+button.btn{
+    color: var(--gray-V);
+    border: 1px solid var(--gray-V);
+    transition: all .3s;
+}
+
+button.btn:hover{
+    scale: 1.1;
+    color: var(--gray-V);
+    border: 1px solid var(--gray-V); 
+}
+
+.h-maxi{
+    min-height: 100vh;
+    height: auto;
+}
+
+div.background{
+    background-image: url('../imgs/background.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+}
+
+div#primary{
+    background-color: var(--green-V-50);
+    color: var(--gray-V);
+}
+
+div#secondary{
+    background-color: var(--gray-V);
+    color: var(--white-V);
+}
+
+i.toggle_Theme{
+    color: var(--white-V);
+    transition: all 0.3s;
+    z-index: 5;
+}
+
+i.toggle_Theme:hover{
+    scale: 1.4;
+}
+
+#img-pokeball{
+    transition: all 0.3s;
+    z-index: 5;
+}
+
+#img-pokeball:hover{
+    scale: 1.4;
+    z-index: 5;
+}
+
+.font_pixel{
+    font-family: 'Pixel-font';
+    text-transform: capitalize;
+    letter-spacing: 1.1px;
+}
+
+#loading_icon{
+    color: var(--gray-V);
+}
+
+.team-icon{
+    display: flex;
+    flex-direction: column;
+    font-size: 10px;
+    margin: 0;
+    line-height: 1px;
+    transition: all .3s;
+    z-index: 5;
+    cursor: pointer;
+}
+
+.team-icon:hover{
+    font-size: 14px;
+    line-height: 4px;
+}
+
+#tela-my-team{
+    background-color: var(--gray-V-50);
+    z-index: 5;
+    height: 100%;
+    overflow-y: scroll;
+}
+
+#btn-close-my-team{
+    color: var(--green-V);
+    border: none;
+    background-color: transparent;
+    font-size: 2.5rem;
+    z-index: 7;
+}
+#offcanvasExample{
+    background-color: var(--gray-V);
+    color: var(--white-V);
+}
+
+#list-small{
+    margin: 200px;
+    display: block;
+    width: 100%;
+    list-style: none;
+}
+
+#list-small > li{
+    width: 100%;
+    border: 2px solid var(--green-dark-V);
+    padding: 10px;
+    transition: all .2s;
+}
+
+#list-small > li:hover{
+    scale: 1.05;
+}
+
+#list-small > li > a{
+    text-decoration: none;
+    color: var(--white-V);
+}
+#btn_fec_ml{
+    color: var(--green-V);
+    background-color: transparent;
+    border: none;
+    font-size: 1.9rem;
+    font-weight: 300;
+}
